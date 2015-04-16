@@ -39,9 +39,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.reddcoin.core.coins.BitcoinMain;
 import com.reddcoin.core.coins.CoinID;
 import com.reddcoin.core.coins.CoinType;
+import com.reddcoin.core.coins.ReddcoinMain;
 import com.reddcoin.core.coins.Value;
 import com.reddcoin.core.util.GenericUtils;
 import com.reddcoin.wallet.Configuration;
@@ -101,7 +101,7 @@ public final class ExchangeRatesFragment extends ListFragment implements OnShare
         if (getArguments() != null && getArguments().containsKey(Constants.ARG_COIN_ID)) {
             type = CoinID.typeFromId(getArguments().getString(Constants.ARG_COIN_ID));
         } else {
-            type = BitcoinMain.get();
+            type = ReddcoinMain.get();
         }
         contentUri = ExchangeRatesProvider.contentUriToLocal(activity.getPackageName(),
                 type.getSymbol(), false);

@@ -125,7 +125,7 @@ public class TradeSelectFragment extends Fragment {
             destinationType = destinationAccount.getCoinType();
         } else {
             // Find a destination coin that is different than the source coin
-            for (CoinType type : Constants.SUPPORTED_COINS) {
+            for (CoinType type : Constants.DEFAULT_COINS) {
                 if (type.equals(sourceAccount.getCoinType())) continue;
                 destinationType = type;
                 break;
@@ -426,7 +426,7 @@ public class TradeSelectFragment extends Fragment {
      */
     private List<CoinType> getSupportedTypes(List<CoinType> availableCoins) {
         ImmutableList.Builder<CoinType> builder = ImmutableList.builder();
-        for (CoinType supportedType : Constants.SUPPORTED_COINS) {
+        for (CoinType supportedType : Constants.DEFAULT_COINS) {
             if (availableCoins.contains(supportedType)) {
                 builder.add(supportedType);
             }

@@ -76,7 +76,7 @@ public class SelectCoinsFragment extends Fragment {
             message = args.getString(Constants.ARG_MESSAGE);
         }
 
-        adapter = new CoinExchangeListAdapter(activity, Constants.SUPPORTED_COINS);
+        adapter = new CoinExchangeListAdapter(activity, Constants.DEFAULT_COINS);
         loaderManager.initLoader(ID_RATE_LOADER, null, rateLoaderCallbacks);
     }
 

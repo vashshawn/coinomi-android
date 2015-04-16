@@ -2,26 +2,9 @@ package com.reddcoin.wallet;
 
 import android.text.format.DateUtils;
 
-import com.reddcoin.core.coins.BitcoinMain;
-import com.reddcoin.core.coins.BitcoinTest;
-import com.reddcoin.core.coins.BlackcoinMain;
-import com.reddcoin.core.coins.CannacoinMain;
 import com.reddcoin.core.coins.CoinID;
 import com.reddcoin.core.coins.CoinType;
-import com.reddcoin.core.coins.DashMain;
-import com.reddcoin.core.coins.DigibyteMain;
-import com.reddcoin.core.coins.DigitalcoinMain;
-import com.reddcoin.core.coins.DogecoinMain;
-import com.reddcoin.core.coins.DogecoinTest;
-import com.reddcoin.core.coins.FeathercoinMain;
-import com.reddcoin.core.coins.LitecoinMain;
-import com.reddcoin.core.coins.LitecoinTest;
-import com.reddcoin.core.coins.NuBitsMain;
-import com.reddcoin.core.coins.NuSharesMain;
-import com.reddcoin.core.coins.PeercoinMain;
 import com.reddcoin.core.coins.ReddcoinMain;
-import com.reddcoin.core.coins.RubycoinMain;
-import com.reddcoin.core.coins.UroMain;
 import com.reddcoin.core.network.CoinAddress;
 import com.reddcoin.stratumj.ServerAddress;
 import com.google.common.collect.ImmutableList;
@@ -101,31 +84,6 @@ public class Constants {
     public static final Integer COIN_ICON = R.drawable.reddcoin;
     public static final String COINS_BLOCK_EXPLORER = "http://live.reddcoin.com/tx/%s";
 
-    public static final CoinType DEFAULT_COIN = BitcoinMain.get();
-    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) BitcoinMain.get());
-    public static final ArrayList<String> DEFAULT_TEST_COIN_IDS = Lists.newArrayList(
-            BitcoinTest.get().getId(),
-            LitecoinTest.get().getId(),
-            DogecoinTest.get().getId()
-    );
-
-    public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-            BitcoinMain.get(),
-            DogecoinMain.get(),
-            LitecoinMain.get(),
-            NuBitsMain.get(),
-            PeercoinMain.get(),
-            NuSharesMain.get(),
-            DashMain.get(),
-            BlackcoinMain.get(),
-            RubycoinMain.get(),
-            ReddcoinMain.get(),
-//            DigibyteMain.get(),
-            FeathercoinMain.get(),
-            DigitalcoinMain.get(),
-            CannacoinMain.get(),
-            BitcoinTest.get(),
-            LitecoinTest.get(),
-            DogecoinTest.get()
-    );
+    public static final CoinType DEFAULT_COIN = ReddcoinMain.get();
+    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) ReddcoinMain.get());
 }
