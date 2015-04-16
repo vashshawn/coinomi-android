@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Coinomi (dev)</string>
-    <string name="app_package">com.coinomi.wallet.dev</string>
+    <string name="app_name">Reddcoin (dev)</string>
+    <string name="app_package">com.reddcoin.wallet.dev</string>
     <string name="action_scan_qr_code">Scan</string>
     <string name="action_share">Share</string>
     <string name="action_copy">Copy</string>
@@ -65,7 +65,7 @@
     <string name="receive">Receive</string>
 
     <!-- Welcome fragment -->
-    <string name="welcome_text">Welcome to Coinomi wallet</string>
+    <string name="welcome_text">Welcome to the Reddcoin Android wallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
     <string name="test_wallet">Test wallet</string>
@@ -98,7 +98,7 @@
     <!-- Wallet activity -->
     <string name="test_wallet_message">This is a test wallet, where you can send and receive testnet Bitcoins, Litecoin and Dogecoins.\n\nIf you want to use the wallet with real money please go to: <b>Settings > Restore wallet > Create a new wallet</b>.</string>
     <string name="wallet_update_title">New version available</string>
-    <string name="wallet_update_message">A new version of Coinomi is available, it contains new features and fixes.</string>
+    <string name="wallet_update_message">A new version of the Reddcoin Android wallet is available, it contains new features and fixes.</string>
 
     <!-- Balance fragment -->
     <string name="wallet_transactions_coinbase">mined</string>
@@ -182,8 +182,8 @@
     </plurals>
 
     <!-- About Activity -->
-    <string name="title_activity_about">About Coinomi</string>
-    <string name="app_name_long">Coinomi for Android</string>
+    <string name="title_activity_about">About the Reddcoin Android wallet</string>
+    <string name="app_name_long">Reddcoin Android wallet</string>
     <string name="about_licence">An open source project\nhttps://github.com/Coinomi/coinomi-android\nSource code licensed under GNU General Public License 3</string>
     <string name="about_credits_nubits">Server infrastructure donated by NuBits - The World\'s First Stable Digital Currency\nhttps://nubits.com/</string>
     <string name="about_credits_bitcoinj">Uses Bitcoinj library\nhttp://bitcoinj.github.io/</string>
@@ -193,7 +193,7 @@
     <string name="about_credits_crypto_icons">Crypto-icons by Chris Shepherd\nhttps://github.com/shphrd/crypto-icons</string>
     <string name="about_credits_font_icons">Font-icons by Daniel Bruce\nhttp://www.entypo.com</string>
     <string name="about_credits_exchange_rates">Exchange rates provided by\nhttp://www.cryptocoincharts.info/\nhttps://bitcoinaverage.com/</string>
-    <string name="about_coinomi_copyright">Coinomi 2014&#8211;2015</string>
+    <string name="about_coinomi_copyright">Reddcoin 2015</string>
 
     <!-- Add Coins -->
     <string name="title_activity_add_coins">Add coins</string>
