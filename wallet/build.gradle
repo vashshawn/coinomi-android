@@ -12,7 +12,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.coinomi.wallet.dev"
+        applicationId "com.reddcoin.wallet.dev"
         minSdkVersion 10
         targetSdkVersion 21
         versionCode 37

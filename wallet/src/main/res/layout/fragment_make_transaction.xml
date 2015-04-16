@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.coinomi.wallet.ui.MakeTransactionFragment">
+    tools:context="com.reddcoin.wallet.ui.MakeTransactionFragment">
 
 
     <ScrollView
@@ -38,14 +38,14 @@
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
-                <com.coinomi.wallet.ui.widget.TransactionAmountVisualizer
+                <com.reddcoin.wallet.ui.widget.TransactionAmountVisualizer
                     android:id="@+id/transaction_amount_visualizer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/standard_margin"
                     android:gravity="center_vertical" />
 
-                <com.coinomi.wallet.ui.widget.SendOutput
+                <com.reddcoin.wallet.ui.widget.SendOutput
                     android:id="@+id/transaction_trade_withdraw"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

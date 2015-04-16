@@ -33,7 +33,7 @@
         android:layout_weight="1"
         tools:text="Coin name" />
 
-    <com.coinomi.wallet.ui.widget.Amount
+    <com.reddcoin.wallet.ui.widget.Amount
         android:id="@+id/exchange_rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
