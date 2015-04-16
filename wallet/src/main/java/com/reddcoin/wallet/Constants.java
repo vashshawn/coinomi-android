@@ -97,11 +97,7 @@ public class Constants {
     );
 
     public static final Integer COIN_ICON = R.drawable.reddcoin;
-    public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
-    static {
-        COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
-        COINS_BLOCK_EXPLORERS.put(CoinID.REDDCOIN_MAIN.getCoinType(), "http://live.reddcoin.com/tx/%s");
-    }
+    public static final String COINS_BLOCK_EXPLORER = "http://live.reddcoin.com/tx/%s";
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
     public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) BitcoinMain.get());

@@ -179,19 +179,15 @@ public class TransactionDetailsFragment extends Fragment {
     }
 
     private void setupBlockExplorerLink(CoinType type, String txHash) {
-        if (Constants.COINS_BLOCK_EXPLORERS.containsKey(type)) {
-            final String url = String.format(Constants.COINS_BLOCK_EXPLORERS.get(type), txHash);
-            blockExplorerLink.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse(url));
-                    startActivity(i);
-                }
-            });
-        } else {
-            blockExplorerLink.setVisibility(View.GONE);
-        }
+        final String url = String.format(Constants.COINS_BLOCK_EXPLORER, txHash);
+        blockExplorerLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
     }
 
     private void cannotShowTxDetails() {
