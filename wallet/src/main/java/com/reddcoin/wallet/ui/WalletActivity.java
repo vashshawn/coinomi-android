@@ -190,7 +190,7 @@ final public class WalletActivity extends BaseWalletActivity implements
         NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.navigation_drawer_wallet));
         for (WalletAccount account : getAllAccounts()) {
             CoinType type = account.getCoinType();
-            NavDrawerItem.addItem(navDrawerItems, ITEM_COIN, type.getName(), Constants.COINS_ICONS.get(type), account.getId());
+            NavDrawerItem.addItem(navDrawerItems, ITEM_COIN, type.getName(), Constants.COIN_ICON, account.getId());
         }
     }
 

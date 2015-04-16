@@ -39,7 +39,7 @@ public class CoinListItem extends LinearLayout implements Checkable {
     public void setCoin(CoinType type) {
         this.type = type;
         title.setText(type.getName());
-        icon.setImageResource(Constants.COINS_ICONS.get(type));
+        icon.setImageResource(Constants.COIN_ICON);
     }
 
     public void setExchangeRate(ExchangeRate exchangeRate) {

@@ -60,7 +60,7 @@ public class WalletUtils {
     }
 
     public static int getIconRes(CoinType type) {
-        return Constants.COINS_ICONS.get(type);
+        return Constants.COIN_ICON;
     }
 
     public static int getIconRes(WalletAccount account) {
