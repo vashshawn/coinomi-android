@@ -92,9 +92,11 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(ReddcoinMain.get(),     new ServerAddress("rdd-cce-1.reddcoin.net", 5014),
-                                                    new ServerAddress("rdd-cce-2.reddcoin.net", 5014))
-    );
+            new CoinAddress(ReddcoinMain.get(),
+                    new ServerAddress("rdd-cce-1.reddcoin.net", 5014),
+                    new ServerAddress("rdd-cce-2.reddcoin.net", 5014),
+                    new ServerAddress("reddwallet.org", 50001))
+            );
 
     public static final Integer COIN_ICON = R.drawable.reddcoin;
     public static final String COINS_BLOCK_EXPLORER = "http://live.reddcoin.com/tx/%s";
