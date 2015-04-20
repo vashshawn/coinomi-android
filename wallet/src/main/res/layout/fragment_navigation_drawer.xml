@@ -26,7 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/button_add_coins" />
+            android:text="@string/button_add_coins"
+            android:visibility="gone"/>
     </FrameLayout>
 </LinearLayout>
 
