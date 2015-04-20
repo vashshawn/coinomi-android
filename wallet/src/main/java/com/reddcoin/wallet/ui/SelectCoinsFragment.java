@@ -16,7 +16,9 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.google.common.collect.ImmutableList;
 import com.reddcoin.core.coins.CoinType;
+import com.reddcoin.core.coins.ReddcoinMain;
 import com.reddcoin.wallet.Configuration;
 import com.reddcoin.wallet.Constants;
 import com.reddcoin.wallet.ExchangeRatesProvider;
@@ -76,7 +78,7 @@ public class SelectCoinsFragment extends Fragment {
             message = args.getString(Constants.ARG_MESSAGE);
         }
 
-        adapter = new CoinExchangeListAdapter(activity, Constants.DEFAULT_COINS);
+        adapter = new CoinExchangeListAdapter(activity, ImmutableList.of((CoinType) ReddcoinMain.get()));
         loaderManager.initLoader(ID_RATE_LOADER, null, rateLoaderCallbacks);
     }
 

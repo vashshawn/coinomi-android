@@ -346,7 +346,7 @@ final public class WalletActivity extends BaseWalletActivity implements
                             final CoinURI coinUri = new CoinURI(input);
                             CoinType scannedType = coinUri.getType();
 
-                            if (!Constants.DEFAULT_COINS.contains(scannedType)) {
+                            if (Constants.DEFAULT_COIN != scannedType) {
                                 String error = getResources().getString(R.string.unsupported_coin, scannedType.getName());
                                 throw new CoinURIParseException(error);
                             } else if (!getWalletApplication().isAccountExists(scannedType)) {

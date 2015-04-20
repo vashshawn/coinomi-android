@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.reddcoin.core.coins.CoinID;
 import com.reddcoin.core.coins.CoinType;
+import com.reddcoin.core.coins.ReddcoinMain;
 import com.reddcoin.core.wallet.Wallet;
 import com.reddcoin.wallet.Constants;
 import com.reddcoin.wallet.R;
@@ -72,15 +73,9 @@ public class FinalizeWalletRestorationFragment extends Fragment {
     }
 
     private List<CoinType> getCoinsTypes(Bundle args) {
-        if (args.containsKey(Constants.ARG_MULTIPLE_COIN_IDS)) {
-            List<CoinType> coinTypes = new ArrayList<CoinType>();
-            for (String id : args.getStringArrayList(Constants.ARG_MULTIPLE_COIN_IDS)) {
-                coinTypes.add(CoinID.typeFromId(id));
-            }
-            return coinTypes;
-        } else {
-            return Constants.DEFAULT_COINS;
-        }
+        List<CoinType> coinTypes = new ArrayList<CoinType>();
+        coinTypes.add(ReddcoinMain.get());
+        return coinTypes;
     }
 
     @Override

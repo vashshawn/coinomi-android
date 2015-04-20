@@ -85,5 +85,4 @@ public class Constants {
     public static final String COINS_BLOCK_EXPLORER = "http://live.reddcoin.com/tx/%s";
 
     public static final CoinType DEFAULT_COIN = ReddcoinMain.get();
-    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) ReddcoinMain.get());
 }
