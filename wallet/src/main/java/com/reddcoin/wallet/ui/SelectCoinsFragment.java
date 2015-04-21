@@ -123,6 +123,7 @@ public class SelectCoinsFragment extends Fragment {
             }
         });
         coinList.setAdapter(adapter);
+        selectCoins(Lists.newArrayList(ReddcoinMain.get().getId()));
 
         return view;
     }
