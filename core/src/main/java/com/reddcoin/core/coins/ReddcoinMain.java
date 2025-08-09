@@ -1,9 +1,9 @@
-package com.reddcoin.core.coins;
+package com.litedoge..core.coins;
 
 /**
  * @author John L. Jegutanis
  */
-public class ReddcoinMain extends CoinType {
+public class litedogeMain extends CoinType {
     private ReddcoinMain() {
         id = "reddcoin.main";
 
@@ -25,7 +25,7 @@ public class ReddcoinMain extends CoinType {
         softDustPolicy = SoftDustPolicy.BASE_FEE_FOR_EACH_SOFT_DUST_TXO;
     }
 
-    private static ReddcoinMain instance = new ReddcoinMain();
+    private static LitedogeMain instance = new LitedogeMain();
     public static synchronized ReddcoinMain get() {
         return instance;
     }
